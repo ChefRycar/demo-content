@@ -1,0 +1,8 @@
+name: cm_profile
+title: Cloud Migration Validation Profile
+maintainer: The Authors
+copyright: The Authors
+copyright_email: you@example.com
+license: Apache-2.0
+summary: A profile to ensure proper application settings.
+version: 0.1.0
