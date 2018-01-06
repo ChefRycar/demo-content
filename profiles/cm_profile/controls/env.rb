@@ -18,7 +18,7 @@ control 'env-2.0' do
   impact 1.0
   title 'Validate Java'
   desc 'Ensure Java is installed'
-  describe package('java') do
+  describe package('java-common') do
     it { should be_installed }
   end
 end
@@ -36,7 +36,7 @@ control 'env-4.0' do
   impact 1.0
   title 'Validate MySQL'
   desc 'Ensure MySQL is installed and running'
-  describe service('mysql-server') do
+  describe service('mysqld') do
     it { should be_installed }
     it { should be_enabled }
     it { should be_running }
