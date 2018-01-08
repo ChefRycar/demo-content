@@ -36,7 +36,7 @@ control 'env-4.0' do
   impact 1.0
   title 'Validate MySQL'
   desc 'Ensure MySQL is installed and running'
-  describe service('mysqld') do
+  describe service('mysql') do
     it { should be_installed }
     it { should be_enabled }
     it { should be_running }
