@@ -9,4 +9,4 @@ version: 0.1.0
 
 depends:
   - name: cm_profile
-    compliance: workstation-1/cm_profile
+    url: https://github.com/ChefRycar/demo-content/blob/master/profiles/cm_profile-0.1.0.tar.gz
