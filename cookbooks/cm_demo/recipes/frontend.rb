@@ -1,3 +1,12 @@
+# Only check the frontend if this recipe is in use
+node.override['audit']['profiles'] = [
+  {
+    name: 'Linux Baseline',
+    compliance: 'workstation-1/cm_frontend',
+  },
+]
+
+# Update DB Attributes based on a qurey of the Chef Server
 dbquery = "chef_environment:#{node.chef_environment}" \
           ' AND recipes:bjc-ecommerce\:\:mysql'
 
