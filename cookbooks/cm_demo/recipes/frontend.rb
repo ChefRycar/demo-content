@@ -8,7 +8,7 @@ else
   node.override['bjc-ecommerce']['db-host'] = 'localhost'
 end
 
-include_recipe 'bjc-ecomnmerce::tksetup'
+include_recipe 'bjc-ecommerce::tksetup'
 include_recipe 'bjc-ecommerce::java'
 include_recipe 'bjc-ecommerce::tomcat'
 include_recipe 'bjc-ecommerce::cart'
