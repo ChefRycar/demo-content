@@ -1,0 +1,12 @@
+name: cm_frontend
+title: Cloud Migration Frontend Validation
+maintainer: The Authors
+copyright: The Authors
+copyright_email: you@example.com
+license: Apache-2.0
+summary: A wrapper profile for cm_profile that skips MySQL controls.
+version: 0.1.0
+
+depends:
+  - name: cm_profile
+    compliance: workstation-1/cm_profile
