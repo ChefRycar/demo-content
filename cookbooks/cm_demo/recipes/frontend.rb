@@ -3,7 +3,7 @@ dbquery = "chef_environment:#{node.chef_environment}" \
 
 dbhost = search(:node, dbquery).first
 if dbhost
-  node.override['bjc-ecommerce']['db-host'] = dbhost['hostname']
+  node.override['bjc-ecommerce']['db-host'] = dbhost['ec2']['public_ipv4']
 else
   node.override['bjc-ecommerce']['db-host'] = 'localhost'
 end
