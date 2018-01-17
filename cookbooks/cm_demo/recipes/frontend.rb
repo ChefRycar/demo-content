@@ -6,6 +6,9 @@ node.override['audit']['profiles'] = [
   },
 ]
 
+# Nothing up my sleeves
+node.override['bjc-ecommerce']['company-name'] = "Planet Express (With a scalable frontend)"
+
 # Update DB Attributes based on a qurey of the Chef Server
 dbquery = "chef_environment:#{node.chef_environment}" \
           ' AND recipes:bjc-ecommerce\:\:mysql'
