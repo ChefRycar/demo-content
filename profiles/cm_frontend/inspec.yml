@@ -9,4 +9,4 @@ version: 0.1.0
 
 depends:
   - name: cm_profile
-    url: https://github.com/ChefRycar/demo-content/blob/master/profiles/cm_profile-0.1.0.tar.gz
+    url: https://github.com/ChefRycar/demo-content/releases/download/0.1.0/cm_profile-0.1.0.tar.gz
