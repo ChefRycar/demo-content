@@ -6,3 +6,9 @@ copyright_email: you@example.com
 license: Apache-2.0
 summary: An InSpec Compliance Profile
 version: 0.1.0
+
+depends:
+  - name: cis-ubuntu14.04lts-level1
+    compliance: leela/cis-ubuntu14.04lts-level1
+  - name: cis-ubuntu14.04lts-level2
+    compliance: leela/cis-ubuntu14.04lts-level2
