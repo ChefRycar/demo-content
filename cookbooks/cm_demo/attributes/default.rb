@@ -8,7 +8,7 @@ default['audit']['profiles'] = [
   },
 ]
 
-if node['name'].include(/^i-(.*)/)
+if node['fqdn'].include?('compute.internal')
   default['bjc-ecommerce']['company-name'] = '&#128640; Planet Express (on AWS!) &#128640;'
 else
   default['bjc-ecommerce']['company-name'] = '&#128640; Planet Express (on prem!) &#128640;'
